@@ -3,86 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MONUMENT_LABS | Biological Architecture & Sovereign Synthesis</title>
-    
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="description" content="Institutional infrastructure for biological continuity. Norvoc-driven genomic mapping and Katin-peptide synthesis nodes across the Irvine-Singapore axis.">
+    <title>MONUMENT_LABS | Sovereign Biological Infrastructure</title>
+    <meta name="description" content="Institutional OS for biological continuity. Integrating forensic AI diagnostics with localized synthesis nodes across the Helsinki-Singapore axis.">
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalOrganization",
       "name": "Monument Labs",
-      "identifier": "ML-OS-2026",
-      "knowsAbout": ["Mitochondrial Flux", "Peptide Synthesis", "Genomic Architecture"],
+      "alternateName": "Bio-Sovereignty OS",
       "location": [
-        { "@type": "City", "name": "Irvine, CA" },
-        { "@type": "City", "name": "Singapore" }
-      ]
+        { "@type": "City", "name": "Helsinki", "description": "Legal & Forensic Intelligence Seat" },
+        { "@type": "City", "name": "Singapore", "description": "Global Manufacturing Node" }
+      ],
+      "knowsAbout": ["Mitochondrial Thermodynamics", "Fiduciary Continuity", "Genomic Sovereignty"]
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { background-color: #020617; color: #94a3b8; font-family: 'Inter', sans-serif; }
-        .mono { font-family: 'JetBrains Mono', monospace; }
-        .thick-border { border: 1px solid rgba(255,255,255,0.07); }
-        .glow-blue { box-shadow: 0 0 50px rgba(37, 99, 235, 0.1); }
+        :root { --slate-950: #020617; --blue-600: #2563eb; }
+        body { background-color: var(--slate-950); color: #94a3b8; font-family: 'Inter', sans-serif; letter-spacing: -0.01em; }
+        .mono { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; }
+        .h-text { color: #ffffff; font-weight: 800; letter-spacing: -0.04em; font-family: 'Inter', sans-serif; }
+        .stat-card { background: rgba(15, 23, 42, 0.4); border: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(12px); }
+        .stat-card:hover { border-color: var(--blue-600); }
         @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .animate-ticker { animation: ticker 40s linear infinite; }
+        .gradient-border { border-image: linear-gradient(to right, #2563eb, transparent) 1; }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-blue-600/30">
 
     <div class="fixed top-0 w-full z-[100] bg-blue-600 text-white py-1.5 overflow-hidden border-b border-blue-400/20">
-        <div class="flex whitespace-nowrap gap-16 animate-ticker mono text-[9px] font-bold uppercase tracking-widest">
-            <span>[ NODE_01_IRVINE: ACTIVE ]</span>
-            <span>SYNTHESIS_PURITY: 99.98%</span>
-            <span>[ NODE_02_SINGAPORE: ACTIVE ]</span>
-            <span>THROUGHPUT: 1.2M PEPTIDE_CYCLES/HR</span>
-            <span>[ NORVOC_CORE: UPDATING_MODELS ]</span>
-            <span>GENOMIC_DRIFT_COMPENSATION: ENABLED</span>
-            <span>[ NODE_01_IRVINE: ACTIVE ]</span>
-            <span>SYNTHESIS_PURITY: 99.98%</span>
+        <div class="flex whitespace-nowrap gap-16 animate-ticker mono font-bold uppercase tracking-[0.2em] text-[9px]">
+            <span>[ JURISDICTION: EU_GDPR_HELSINKI ]</span>
+            <span>R&D_INTAKE: 1.2M GENOMIC_POINTS/S</span>
+            <span>[ COMPLIANCE: NOMINAL ]</span>
+            <span>[ JURISDICTION: SG_GMP_SINGAPORE ]</span>
+            <span>BATCH_ML024: 99.99% PURITY</span>
+            <span>THERMODYNAMIC_STABILITY: 0.942</span>
+            <span>[ JURISDICTION: EU_GDPR_HELSINKI ]</span>
         </div>
     </div>
 
-    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
-        
-        <section class="mb-32">
-            <div class="inline-flex items-center gap-3 px-3 py-1 rounded-sm border border-blue-500/20 bg-blue-500/5 mb-8">
-                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                <span class="text-[10px] mono text-blue-400 font-bold uppercase tracking-[0.3em]">Institutional_Protocol_v2.6</span>
+    <nav class="fixed top-10 w-full z-50 px-6">
+        <div class="max-w-7xl mx-auto h-16 border border-white/5 bg-slate-950/90 backdrop-blur-xl rounded-sm flex items-center justify-between px-8">
+            <div class="flex items-center gap-4">
+                <div class="w-7 h-7 bg-blue-600 flex items-center justify-center text-white font-black italic">M</div>
+                <span class="h-text text-sm uppercase tracking-tighter">Monument_Labs_OS</span>
             </div>
-            <h1 class="text-7xl font-black text-white tracking-tighter mb-8 leading-none">
-                Biological <br/> <span class="text-blue-600">Infrastructure.</span>
-            </h1>
-            <p class="text-xl text-slate-400 max-w-2xl leading-relaxed">
-                Monument Labs is a full-stack biological utility. We deploy proprietary synthesis nodes and AI-driven diagnostic operating systems to secure human healthspan at scale.
-            </p>
-        </section>
+            <div class="hidden md:flex gap-10 mono uppercase tracking-widest font-bold text-slate-500 text-[10px]">
+                <a href="#logic" class="hover:text-white transition">Systems_Logic</a>
+                <a href="#moat" class="hover:text-white transition">Market_Moat</a>
+                <a href="#nodes" class="hover:text-white transition">Foundry_Nodes</a>
+                <a href="#vdr" class="bg-blue-600 text-white px-5 py-2 hover:bg-blue-500 transition">Initialize_Sync</a>
+            </div>
+        </div>
+    </nav>
 
-        <section class="grid lg:grid-cols-3 gap-1 px-1 bg-white/5 border border-white/5 rounded-sm">
-            <div class="p-10 bg-[#020617] space-y-6">
-                <h3 class="text-white font-bold mono text-xs uppercase tracking-widest">01 / Forensic Intelligence</h3>
-                <p class="text-xs leading-relaxed">Norvoc Core utilizes adversarial AI models to audit metabolic metadata, identifying systemic decay with 98.4% predictive accuracy.</p>
+    <header class="pt-64 pb-32 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-start">
+            <div class="space-y-12">
+                <div class="inline-flex items-center gap-3 px-3 py-1 bg-blue-500/10 border border-blue-500/20">
+                    <span class="text-[9px] mono uppercase text-blue-400 font-bold tracking-[0.4em]">Vertical Continuity Protocol</span>
+                </div>
+                <h1 class="text-8xl h-text leading-[0.85]">
+                    Sovereign <br/> Human <br/> <span class="text-blue-600 italic">Infrastructure.</span>
+                </h1>
+                <p class="text-xl text-slate-400 leading-relaxed font-light border-l border-zinc-700 pl-8">
+                    Treating biological entropy as a remediable infrastructure error. Monument integrates **Norvoc Core** forensic AI with **Katin Synthesis** to secure human continuity as a scalable, sovereign asset.
+                </p>
+                <div class="flex gap-4">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 mono text-[10px] font-bold uppercase tracking-widest transition-all shadow-xl shadow-blue-900/20">Access Executive Protocol</button>
+                    <button class="border border-slate-800 hover:border-slate-600 text-white px-10 py-5 mono text-[10px] font-bold uppercase tracking-widest transition-all">Audit VDR Data</button>
+                </div>
             </div>
-            <div class="p-10 bg-[#020617] space-y-6 border-x border-white/5">
-                <h3 class="text-white font-bold mono text-xs uppercase tracking-widest">02 / Synthesis Efficiency</h3>
-                <p class="text-xs leading-relaxed">Katin Synthesis Protocol ML-024 stabilizes mitochondrial flux. Thermodynamic optimization reduces ROS leakage by 22% per cycle.</p>
+            <div class="stat-card rounded-sm p-10 relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-blue-600/30"></div>
+                <div class="flex justify-between items-center mb-10">
+                    <span class="mono text-[10px] text-blue-500 font-black uppercase tracking-widest italic">Institutional Partnership Intake</span>
+                    <i data-lucide="shield-check" class="text-blue-500 w-5 h-5"></i>
+                </div>
+                
             </div>
-            <div class="p-10 bg-[#020617] space-y-6">
-                <h3 class="text-white font-bold mono text-xs uppercase tracking-widest">03 / Sovereign Deployment</h3>
-                <p class="text-xs leading-relaxed">Decentralized nodes in Singapore and Irvine provide geopolitical resilience and just-in-time delivery of molecular patches.</p>
-            </div>
-        </section>
+        </div>
+    </header>
 
-    </main>
+    <section id="logic" class="py-40 bg-black/40 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-8">
+                <div class="max-w-xl">
+                    <span class="mono text-blue-500 font-black tracking-[0.5em] uppercase text-[10px]">01 // Mechanistic Proof</span>
+                    <h2 class="text-5xl h-text mt-4">Stochastic Error Correction.</h2>
+                </div>
+                <p class="text-sm text-slate-500 mono uppercase tracking-widest pb-2">Control Loop: Active</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="space-y-10">
+                    <div class="stat-card p-10 space-y-6">
+                        <h3 class="h-text text-sm uppercase tracking-widest flex items-center gap-3">
+                            <i data-lucide="brain-circuit" class="text-blue-500 w-5 h-5"></i>
+                            Norvoc Core: Forensic AI
+                        </h3>
+                        <p class="text-sm leading-relaxed text-slate-400 font-light">
+                            Utilizing adversarial machine learning to model metabolic decay pathways. Norvoc audits genomic drift with 99.4% predictive accuracy, forecasting systemic failure prior to phenotypic manifestation.
+                        </p>
+                    </div>
+                    <div class="stat-card p-10 space-y-6">
+                        <h3 class="h-text text-sm uppercase tracking-widest flex items-center gap-3">
+                            <i data-lucide="flask-conical" class="text-blue-500 w-5 h-5"></i>
+                            Katin Synthesis: Foundries
+                        </h3>
+                        <p class="text-sm leading-relaxed text-slate-400 font-light">
+                            Mitigating Reactive Oxygen Species (ROS) leakage through molecular scaffolding. Stabilization of the **Inner Mitochondrial Membrane (IMM)** restores thermodynamic efficiency at the cellular foundation.
+                        </p>
+                    </div>
+                </div>
+                <div class="stat-card p-12 flex flex-col justify-center items-center gap-8 text-center bg-blue-600/5">
+                    <p class="h-text text-xl tracking-tighter">Thermodynamic Resilience Coefficient</p>
+                    
+                    <div class="w-full space-y-4">
+                        <div class="flex justify-between mono text-[10px] text-blue-400 uppercase font-black">
+                            <span>Target Stability Index</span>
+                            <span>94.2%</span>
+                        </div>
+                        <div class="w-full bg-slate-900 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-blue-600 h-full w-[94%] shadow-[0_0_15px_rgba(37,99,235,0.6)]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="py-20 border-t border-white/5 text-center">
-        <p class="text-[10px] text-slate-700 mono uppercase tracking-[0.5em]">
-            Permanence_Verified // Monument Labs 2026
+    <section id="moat" class="py-40">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-20 items-center">
+            <div class="lg:col-span-5 space-y-8">
+                <h3 class="text-5xl h-text tracking-tighter uppercase">Vertical <br/> Continuity.</h3>
+                <p class="text-lg text-slate-400 font-light leading-relaxed">
+                    Monument Labs vertically integrates the longevity stack. By owning the diagnostic forensice (Norvoc) and the manufacturing protocol (Katin), we eliminate market fragmentation and secure the entire biological value chain.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-sm mono uppercase text-zinc-500 font-bold">
+                        <span class="w-1.5 h-1.5 bg-blue-600"></span> Institutional IP Defensibility
+                    </li>
+                    <li class="flex items-center gap-3 text-sm mono uppercase text-zinc-500 font-bold">
+                        <span class="w-1.5 h-1.5 bg-blue-600"></span> Scalable Human Capital Assets
+                    </li>
+                </ul>
+            </div>
+            <div class="lg:col-span-7">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="nodes" class="py-40 border-t border-white/5 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-24 text-center">
+                <span class="mono text-blue-500 font-black tracking-[0.5em] uppercase text-[10px]">Fiduciary Deployment Registry</span>
+                <h2 class="text-6xl h-text mt-4 uppercase tracking-tighter">Jurisdictional Hegemony.</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="stat-card p-16 space-y-8 border-t-2 border-t-blue-600">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-3xl h-text tracking-tighter uppercase">Helsinki Node</h3>
+                        <span class="mono text-[9px] bg-emerald-500/10 text-emerald-500 px-3 py-1 font-black">EU_SOVEREIGNTY</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed font-light">
+                        The primary R&D cluster for Forensic Bio-Intelligence. Strategic positioning within the EU framework ensures total genomic data sovereignty and GDPR-governed client privacy.
+                    </p>
+                </div>
+                <div class="stat-card p-16 space-y-8 border-t-2 border-t-blue-600">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-3xl h-text tracking-tighter uppercase">Singapore Node</h3>
+                        <span class="mono text-[9px] bg-blue-500/10 text-blue-500 px-3 py-1 font-black">GMP_SYNTHESIS</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed font-light">
+                        Global Synthesis Foundry specializing in high-margin peptide assembly. ISO-certified modular capacity servicing the sovereign APAC longevity corridor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vdr" class="py-56 px-6 bg-black">
+        <div class="max-w-2xl mx-auto text-center space-y-16">
+            <h2 class="text-7xl h-text tracking-tighter leading-none uppercase">Initialize <br/> Institutional <br/> Sync.</h2>
+            <div class="stat-card p-12 rounded-sm border border-blue-500/20 shadow-2xl shadow-blue-900/10">
+                <p class="text-[10px] mono text-slate-500 uppercase mb-10 tracking-[0.4em] font-black italic">Fiduciary Gateway // VDR Access</p>
+                <div class="space-y-4">
+                    <input type="email" placeholder="COUNSEL_OF_RECORD@INSTITUTION.DOM" class="w-full bg-slate-950 border border-white/10 p-5 text-[11px] mono text-white outline-none focus:border-blue-600 transition-all">
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 mono text-[10px] font-black uppercase tracking-widest transition-all">Request Audit Credentials</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 border-t border-white/5 text-center mono">
+        <p class="text-[9px] text-zinc-800 tracking-[0.8em] font-black uppercase">
+            Monument Labs OS // V.01 // Cambridge // Helsinki // Singapore // MMXXVI
         </p>
     </footer>
 
