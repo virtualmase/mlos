@@ -1,155 +1,166 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONUMENT_LABS | Scaling Life-State Infrastructure</title>
     
-    <title>MONUMENT_LABS | Sovereign Human Capital Estate Analytics</title>
-    <meta name="description" content="Monument Labs provides analytical services to quantify the thermodynamic integrity of the Human Capital Estate. Leveraging forensic Norvoc AI and Katin synthesis.">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalOrganization",
-      "name": "Monument Labs",
-      "foundingDate": "2026",
-      "description": "Institutional infrastructure for mitochondrial error correction and biological asset management.",
-      "areaServed": ["Helsinki", "Singapore"],
-      "knowsAbout": ["Mitochondrial Thermodynamics", "Stochastic Error Correction", "Genomic Sovereignty"],
-      "memberOf": { "@type": "Organization", "name": "Helsinki Bio-Governance Protocol" }
-    }
-    </script>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=JetBrains+Mono:wght@500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@200;800&display=swap" rel="stylesheet">
     
     <style>
-        :root { --accent: #2563eb; --bg: #020617; }
-        body { background-color: var(--bg); color: #94a3b8; font-family: 'Inter', sans-serif; }
-        .mono { font-family: 'JetBrains Mono', monospace; }
-        .h-text { color: #f8fafc; font-weight: 900; letter-spacing: -0.05em; }
-        .audit-border { border: 1px solid rgba(255,255,255,0.05); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .audit-border:hover { border-color: var(--accent); background: rgba(37, 99, 235, 0.02); }
-        @keyframes scan { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
-        .scan-line::after { content: ''; position: absolute; width: 100%; height: 2px; background: var(--accent); opacity: 0.3; animation: scan 3s linear infinite; }
+        :root { --glitch-blue: #00e5ff; --hyper-blue: #4285F4; }
+        body { background-color: #000; color: #94a3b8; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .mono { font-family: 'Roboto Mono', monospace; }
+        .h-text { color: #fff; font-weight: 800; letter-spacing: -0.06em; line-height: 0.85; }
+        .nav-blur { background: rgba(0, 0, 0, 0.7); backdrop-filter: saturate(180%) blur(20px); }
+        .gradient-text { background: linear-gradient(135deg, #fff 30%, #4285F4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .footer-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px); background-size: 30px 30px; }
+        .btn-glow:hover { box-shadow: 0 0 40px rgba(66, 133, 244, 0.3); transform: translateY(-1px); }
     </style>
 </head>
-<body class="antialiased selection:bg-blue-600/30">
+<body class="antialiased">
 
-    <div class="fixed top-0 w-full z-[100] bg-zinc-950 border-b border-white/5 py-1.5 overflow-hidden mono text-[9px] uppercase font-black italic tracking-[0.2em] text-zinc-500">
-        <div class="flex whitespace-nowrap gap-16 animate-pulse">
-            <span class="text-blue-500">[ NODE_01_HELSINKI: ACTIVE ]</span>
-            <span>DATA_SOVEREIGNTY: EU_GDPR_COMPLIANT</span>
-            <span>THERMODYNAMIC_STABILITY: 0.942_RC</span>
-            <span class="text-blue-500">[ NODE_02_SINGAPORE: ACTIVE ]</span>
-            <span>SYNTHESIS_PURITY: 99.99%</span>
-            <span>HUMAN_CAPITAL_ESTATE: VERIFIED</span>
-        </div>
-    </div>
-
-    <nav class="fixed top-8 w-full z-50 px-6">
-        <div class="max-w-7xl mx-auto h-16 bg-slate-950/80 backdrop-blur-xl border border-white/10 rounded-sm flex items-center justify-between px-10">
-            <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-blue-600 flex items-center justify-center text-white font-black italic text-[10px]">M</div>
-                <span class="h-text text-[11px] uppercase tracking-[0.3em]">Monument_Labs</span>
-            </div>
-            <div class="hidden md:flex gap-10 mono text-[9px] uppercase font-bold text-zinc-400">
-                <a href="#analytics" class="hover:text-blue-500 transition">Forensic_Audit</a>
-                <a href="#foundry" class="hover:text-blue-500 transition">Molecular_Foundry</a>
-                <a href="#vdr" class="bg-blue-600 text-white px-5 py-2 hover:bg-blue-700 transition shadow-lg shadow-blue-900/20">Institutional_Sync</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="pt-64 pb-32 px-10 relative">
-        <div class="max-w-7xl mx-auto">
-            <div class="max-w-4xl space-y-12">
-                <div class="inline-flex items-center gap-3 px-3 py-1 bg-blue-500/5 border border-blue-500/20">
-                    <span class="text-[9px] mono uppercase text-blue-500 font-bold tracking-[0.5em]">Continuity Protocol V.2026</span>
+    <header class="fixed top-0 w-full z-[100] nav-blur border-b border-white/5">
+        <div class="w-full bg-blue-600/10 border-b border-blue-500/10 py-1.5 overflow-hidden">
+            <div class="max-w-[1600px] mx-auto px-6 flex justify-between items-center mono text-[9px] font-bold tracking-widest text-blue-400">
+                <div class="flex gap-10">
+                    <span class="flex items-center gap-2">
+                        <span class="w-1 h-1 rounded-full bg-blue-500 animate-ping"></span> 
+                        LBM_CORE: OPTIMIZED
+                    </span>
+                    <span class="hidden md:block">LATENCY: 14.2ms [HELSINKI_NODE]</span>
+                    <span class="hidden md:block">THROUGHPUT: 4.2PB/S BIO-TELEMETRY</span>
                 </div>
-                <h1 class="text-8xl h-text leading-[0.8] tracking-tighter">
-                    Manage the <br/> <span class="text-blue-600 italic">Human Capital</span> <br/> Estate.
-                </h1>
-                <p class="text-xl text-slate-400 leading-relaxed font-light border-l-2 border-blue-600 pl-10 max-w-2xl">
-                    Monument Labs provides analytical services that quantify the thermodynamic integrity of the Estate. By treating biological decay as a remediable infrastructure error, we establish the sovereign framework for institutional continuity.
-                </p>
-                <div class="flex gap-4 pt-6">
-                    <button class="bg-white text-black px-10 py-5 text-[10px] mono font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all">Download Audit Dossier</button>
-                    <button class="border border-zinc-800 text-white px-10 py-5 text-[10px] mono font-black uppercase tracking-widest hover:border-zinc-500 transition-all">Phase II Access</button>
+                <div class="flex gap-6 italic">
+                    <span>MMXXVI_PROTOCOL_ACTIVE</span>
+                    <span class="text-zinc-600">v.1.02.4-stable</span>
                 </div>
             </div>
         </div>
+
+        <nav class="max-w-[1600px] mx-auto h-20 flex items-center justify-between px-6">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center gap-3 group cursor-pointer">
+                    <div class="w-8 h-8 bg-white flex items-center justify-center rounded-sm group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="blocks" class="text-black w-5 h-5 group-hover:text-white"></i>
+                    </div>
+                    <span class="h-text text-lg uppercase tracking-tight">Monument_Labs</span>
+                </div>
+                <div class="hidden lg:flex gap-8 mono text-[10px] uppercase font-black tracking-widest text-zinc-500">
+                    <a href="#forensics" class="hover:text-white transition">01_Forensic_Intelligence</a>
+                    <a href="#foundry" class="hover:text-white transition">02_Molecular_Sovereignty</a>
+                    <a href="#estate" class="hover:text-white transition">03_Estate_Architecture</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="hidden sm:flex flex-col items-end mono text-[9px] mr-4">
+                    <span class="text-zinc-500">FIDUCIARY_SECURE_VDR</span>
+                    <span class="text-blue-500 font-black tracking-tighter">AUTHENTICATION_READY</span>
+                </div>
+                <button class="bg-white text-black px-6 py-3 text-[10px] mono font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all rounded-sm btn-glow">
+                    Initialize_Kernel
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <section id="analytics" class="py-40 bg-zinc-950/50 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-10 grid lg:grid-cols-2 gap-24 items-center">
-            <div class="space-y-10">
-                <span class="mono text-blue-600 font-black tracking-[0.4em] uppercase text-[10px]">01 // Forensic Analytics</span>
-                <h2 class="text-5xl h-text tracking-tighter uppercase">Stochastic <br/> Error Detection.</h2>
-                <p class="text-sm text-slate-500 leading-relaxed font-serif italic border-l border-zinc-800 pl-8">
-                    "Our analytical services utilize adversarial machine learning to audit mitochondrial drift. We identify thermodynamic leakage at the sub-cellular level 24 months before systemic depreciation."
-                </p>
-                
-            </div>
-            <div class="audit-border p-12 rounded-sm bg-black relative scan-line overflow-hidden">
-                <p class="mono text-[10px] text-zinc-600 uppercase mb-8">Structural Bio-Stability Audit</p>
-                
-                <div class="mt-8 flex justify-between items-end border-t border-white/5 pt-8">
-                    <div>
-                        <p class="mono text-[9px] text-zinc-500 uppercase">Resilience Coefficient</p>
-                        <p class="h-text text-3xl">0.942_RC</p>
+    <main class="pt-48">
+        <section class="max-w-[1600px] mx-auto px-6 py-32">
+            <div class="grid lg:grid-cols-12 gap-16 items-start">
+                <div class="lg:col-span-8 space-y-12">
+                    <div class="inline-flex items-center gap-3 px-3 py-1 bg-white/5 border border-white/10 rounded-full">
+                        <span class="text-[9px] mono uppercase text-zinc-400 font-bold tracking-[0.3em]">Neural Biological Architecture // Meta-Google Consortium</span>
                     </div>
-                    <i data-lucide="shield-check" class="text-blue-600 w-8 h-8"></i>
+                    
+                    <h1 class="text-[140px] h-text gradient-text">
+                        Biology <br/> Without <br/> <span class="italic text-blue-600">Latency.</span>
+                    </h1>
+
+                    <p class="text-2xl text-zinc-400 font-light max-w-2xl leading-relaxed border-l-4 border-blue-600 pl-12">
+                        Monument Labs provides analytical services that quantify the thermodynamic integrity of the **Human Capital Estate**. We treat biological decay as a remediable infrastructure error, deploying planetary-scale bio-compute to ensure 99.99% uptime for the human stack.
+                    </p>
+                </div>
+                
+                <div class="lg:col-span-4 space-y-6">
+                    <div class="p-8 border border-white/5 bg-zinc-900/40 rounded-sm space-y-8 backdrop-blur-md">
+                        <div class="flex justify-between items-center">
+                            <span class="mono text-[10px] text-blue-500 font-black uppercase">Homeostatic_Robustness</span>
+                            <i data-lucide="activity" class="text-blue-500 w-5 h-5"></i>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <div class="flex justify-between mono text-[10px] uppercase font-bold">
+                                <span>Stability_Index</span>
+                                <span class="text-white">0.942_RC</span>
+                            </div>
+                            <div class="w-full bg-white/5 h-1">
+                                <div class="bg-blue-600 h-full w-[94%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-grid border-t border-white/5 pt-32 pb-16">
+        <div class="max-w-[1600px] mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-16 mb-32">
+                <div class="col-span-2 space-y-8">
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-white flex items-center justify-center rounded-sm">
+                            <i data-lucide="blocks" class="text-black w-4 h-4"></i>
+                        </div>
+                        <span class="h-text text-sm uppercase tracking-[0.2em]">Monument_Labs</span>
+                    </div>
+                    <p class="text-xs text-zinc-500 leading-relaxed max-w-xs mono uppercase">
+                        The world's first Large Biological Model (LBM) for the Human Capital Estate. Distributed bio-compute for a post-latency species.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h5 class="mono text-[10px] font-black uppercase text-blue-500 tracking-widest">Global_Nodes</h5>
+                    <ul class="space-y-4 mono text-[10px] text-zinc-400">
+                        <li class="hover:text-white cursor-pointer transition">HELSINKI_DATA_TRUST</li>
+                        <li class="hover:text-white cursor-pointer transition">SINGAPORE_SYNTHESIS</li>
+                        <li class="hover:text-white cursor-pointer transition">SILICON_VALLEY_KERNEL</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h5 class="mono text-[10px] font-black uppercase text-blue-500 tracking-widest">Active_Protocols</h5>
+                    <ul class="space-y-4 mono text-[10px] text-zinc-400">
+                        <li class="hover:text-white cursor-pointer transition">NORVOC_CORE_LBM</li>
+                        <li class="hover:text-white cursor-pointer transition">KATIN_IMM_STABILITY</li>
+                        <li class="hover:text-white cursor-pointer transition">ESTATE_FIDUCIARY_ML-024</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h5 class="mono text-[10px] font-black uppercase text-blue-500 tracking-widest">Sovereignty</h5>
+                    <ul class="space-y-4 mono text-[10px] text-zinc-400">
+                        <li class="hover:text-white cursor-pointer transition">GDPR_COMPLIANCE</li>
+                        <li class="hover:text-white cursor-pointer transition">GENOMIC_DATA_LAWS</li>
+                        <li class="hover:text-white cursor-pointer transition">ISO_9001_FOUNDRY</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-12 gap-8">
+                <div class="flex gap-12 mono text-[9px] uppercase font-black text-zinc-600">
+                    <span>&copy; MMXXVI MONUMENT_LABS_CONSORTIUM</span>
+                    <span class="hidden md:block">ENCRYPTION: AES-256-QUANTUM_HARDENED</span>
+                </div>
+                <div class="flex gap-8">
+                    <i data-lucide="twitter" class="w-4 h-4 text-zinc-500 hover:text-white transition"></i>
+                    <i data-lucide="linkedin" class="w-4 h-4 text-zinc-500 hover:text-white transition"></i>
+                    <i data-lucide="github" class="w-4 h-4 text-zinc-500 hover:text-white transition"></i>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="foundry" class="py-40">
-        <div class="max-w-7xl mx-auto px-10">
-            <div class="grid lg:grid-cols-3 gap-8">
-                <div class="lg:col-span-1 space-y-6">
-                    <span class="mono text-blue-600 font-black tracking-[0.4em] uppercase text-[10px]">02 // Synthesis Foundry</span>
-                    <h3 class="text-4xl h-text tracking-tighter uppercase">Molecular <br/> Continuity.</h3>
-                    <p class="text-sm text-slate-400">Localized GMP synthesis nodes specializing in IMM stabilization. Protocol ML-024 remediates thermodynamic loss at the metabolic origin.</p>
-                </div>
-                <div class="lg:col-span-2 grid md:grid-cols-2 gap-8">
-                    <div class="audit-border p-10 space-y-6">
-                        <h4 class="h-text text-sm uppercase mono italic tracking-widest">Helsinki_Node</h4>
-                        <p class="text-xs text-zinc-500 uppercase tracking-widest font-black">Data Sovereignty Hub</p>
-                        <p class="text-xs text-slate-500">Governed by EU-GDPR+ genomic protocols. Ensuring absolute data permanence for the Human Capital Estate.</p>
-                    </div>
-                    <div class="audit-border p-10 space-y-6">
-                        <h4 class="h-text text-sm uppercase mono italic tracking-widest">Singapore_Node</h4>
-                        <p class="text-xs text-zinc-500 uppercase tracking-widest font-black">Synthesis Foundry</p>
-                        <p class="text-xs text-slate-500">Just-in-time molecular assembly. 99.99% purity verification for institutional-grade metabolic stabilization.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-20">
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="vdr" class="py-56 bg-zinc-950">
-        <div class="max-w-2xl mx-auto text-center space-y-12">
-            <h2 class="text-7xl h-text tracking-tighter uppercase leading-none">Initialize <br/> Institutional <br/> Sync.</h2>
-            <div class="audit-border p-12 bg-black shadow-2xl">
-                <p class="mono text-[10px] text-zinc-600 uppercase mb-10 tracking-[0.5em] font-black italic">Private Equity & Trust Discovery</p>
-                <div class="space-y-4">
-                    <input type="email" placeholder="COUNSEL_OF_RECORD@INSTITUTION.DOM" class="w-full bg-zinc-900 border border-zinc-800 p-5 text-[10px] mono text-white outline-none focus:border-blue-600 transition-all">
-                    <button class="w-full bg-blue-600 text-white py-6 mono text-[10px] font-black uppercase tracking-widest hover:bg-blue-700 transition-all">Request Phase II Admittance</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-24 border-t border-white/5 text-center mono">
-        <p class="text-[9px] text-zinc-800 tracking-[0.8em] font-black uppercase">
-            Monument Labs OS // V.2026 // Helsinki // Singapore
-        </p>
     </footer>
 
     <script>lucide.createIcons();</script>
