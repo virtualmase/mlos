@@ -3,162 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MONUMENT_LABS | Scaling Life-State Infrastructure</title>
+    <title>MONUMENT_LABS | The Lyceum of Biological Sovereignty</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@200;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,900&family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
     
     <style>
-        :root { --glitch-blue: #00e5ff; --hyper-blue: #4285F4; }
-        body { background-color: #000; color: #94a3b8; font-family: 'Plus Jakarta Sans', sans-serif; }
-        .mono { font-family: 'Roboto Mono', monospace; }
-        .h-text { color: #fff; font-weight: 800; letter-spacing: -0.06em; line-height: 0.85; }
-        .nav-blur { background: rgba(0, 0, 0, 0.7); backdrop-filter: saturate(180%) blur(20px); }
-        .gradient-text { background: linear-gradient(135deg, #fff 30%, #4285F4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .footer-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px); background-size: 30px 30px; }
-        .btn-glow:hover { box-shadow: 0 0 40px rgba(66, 133, 244, 0.3); transform: translateY(-1px); }
+        :root { --ivory: #FDFCF8; --ink: #121212; --academic-blue: #1A365D; }
+        body { background-color: var(--ivory); color: var(--ink); font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Fraunces', serif; }
+        .h-text { font-weight: 900; letter-spacing: -0.04em; line-height: 0.85; }
+        .knowledge-node { border-left: 1px solid rgba(18, 18, 18, 0.1); padding-left: 2rem; transition: all 0.5s ease; }
+        .knowledge-node:hover { border-left-color: var(--academic-blue); }
+        .lyceum-header { background: rgba(253, 252, 248, 0.9); backdrop-blur: 20px; border-bottom: 1px solid rgba(18, 18, 18, 0.05); }
     </style>
 </head>
 <body class="antialiased">
 
-    <header class="fixed top-0 w-full z-[100] nav-blur border-b border-white/5">
-        <div class="w-full bg-blue-600/10 border-b border-blue-500/10 py-1.5 overflow-hidden">
-            <div class="max-w-[1600px] mx-auto px-6 flex justify-between items-center mono text-[9px] font-bold tracking-widest text-blue-400">
-                <div class="flex gap-10">
-                    <span class="flex items-center gap-2">
-                        <span class="w-1 h-1 rounded-full bg-blue-500 animate-ping"></span> 
-                        LBM_CORE: OPTIMIZED
-                    </span>
-                    <span class="hidden md:block">LATENCY: 14.2ms [HELSINKI_NODE]</span>
-                    <span class="hidden md:block">THROUGHPUT: 4.2PB/S BIO-TELEMETRY</span>
-                </div>
-                <div class="flex gap-6 italic">
-                    <span>MMXXVI_PROTOCOL_ACTIVE</span>
-                    <span class="text-zinc-600">v.1.02.4-stable</span>
+    <header class="fixed top-0 w-full z-50 lyceum-header">
+        <div class="max-w-[1400px] mx-auto h-24 flex items-center justify-between px-8">
+            <div class="flex items-center gap-8">
+                <div class="flex flex-col">
+                    <span class="serif italic text-2xl font-black leading-none tracking-tighter">Monument Labs</span>
+                    <span class="text-[9px] font-black uppercase tracking-[0.4em] mt-1 opacity-40">Intelligence Infrastructure</span>
                 </div>
             </div>
-        </div>
+            
+            <nav class="hidden lg:flex gap-16 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400">
+                <a href="#first-principles" class="hover:text-black transition">I_First_Principles</a>
+                <a href="#synthesis" class="hover:text-black transition">II_Synthesis</a>
+                <a href="#governance" class="hover:text-black transition">III_Governance</a>
+            </nav>
 
-        <nav class="max-w-[1600px] mx-auto h-20 flex items-center justify-between px-6">
-            <div class="flex items-center gap-10">
-                <div class="flex items-center gap-3 group cursor-pointer">
-                    <div class="w-8 h-8 bg-white flex items-center justify-center rounded-sm group-hover:bg-blue-600 transition-colors">
-                        <i data-lucide="blocks" class="text-black w-5 h-5 group-hover:text-white"></i>
-                    </div>
-                    <span class="h-text text-lg uppercase tracking-tight">Monument_Labs</span>
-                </div>
-                <div class="hidden lg:flex gap-8 mono text-[10px] uppercase font-black tracking-widest text-zinc-500">
-                    <a href="#forensics" class="hover:text-white transition">01_Forensic_Intelligence</a>
-                    <a href="#foundry" class="hover:text-white transition">02_Molecular_Sovereignty</a>
-                    <a href="#estate" class="hover:text-white transition">03_Estate_Architecture</a>
-                </div>
-            </div>
             <div class="flex items-center gap-6">
-                <div class="hidden sm:flex flex-col items-end mono text-[9px] mr-4">
-                    <span class="text-zinc-500">FIDUCIARY_SECURE_VDR</span>
-                    <span class="text-blue-500 font-black tracking-tighter">AUTHENTICATION_READY</span>
-                </div>
-                <button class="bg-white text-black px-6 py-3 text-[10px] mono font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all rounded-sm btn-glow">
-                    Initialize_Kernel
+                <span class="hidden xl:block text-[9px] font-bold text-zinc-400 italic">AD MMXXVI // Cambridge Node</span>
+                <button class="border border-zinc-900 px-8 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-zinc-900 hover:text-white transition-all">
+                    Initialize Enrollment
                 </button>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main class="pt-48">
-        <section class="max-w-[1600px] mx-auto px-6 py-32">
-            <div class="grid lg:grid-cols-12 gap-16 items-start">
-                <div class="lg:col-span-8 space-y-12">
-                    <div class="inline-flex items-center gap-3 px-3 py-1 bg-white/5 border border-white/10 rounded-full">
-                        <span class="text-[9px] mono uppercase text-zinc-400 font-bold tracking-[0.3em]">Neural Biological Architecture // Meta-Google Consortium</span>
-                    </div>
-                    
-                    <h1 class="text-[140px] h-text gradient-text">
-                        Biology <br/> Without <br/> <span class="italic text-blue-600">Latency.</span>
+        <section class="max-w-[1400px] mx-auto px-8 pb-40 border-b border-zinc-100">
+            <div class="grid lg:grid-cols-12 gap-24">
+                <div class="lg:col-span-8 space-y-16">
+                    <h1 class="text-[160px] h-text serif italic">
+                        The <br/> Mastery <br/> of <span class="text-zinc-400">Entropy.</span>
                     </h1>
-
-                    <p class="text-2xl text-zinc-400 font-light max-w-2xl leading-relaxed border-l-4 border-blue-600 pl-12">
-                        Monument Labs provides analytical services that quantify the thermodynamic integrity of the **Human Capital Estate**. We treat biological decay as a remediable infrastructure error, deploying planetary-scale bio-compute to ensure 99.99% uptime for the human stack.
-                    </p>
+                    
+                    <div class="max-w-2xl space-y-12">
+                        <p class="text-3xl font-light leading-tight tracking-tight">
+                            Education is no longer the accumulation of information. It is the **Applied Engineering of Human Permanence**.
+                        </p>
+                        <p class="text-lg text-zinc-500 leading-relaxed border-l-2 border-zinc-900 pl-10 italic serif">
+                            Monument Labs provides analytical services that quantify the thermodynamic integrity of the **Human Capital Estate**. We translate the raw data of sub-cellular failure into a managed curriculum of **Homeostatic Robustness**.
+                        </p>
+                    </div>
                 </div>
                 
-                <div class="lg:col-span-4 space-y-6">
-                    <div class="p-8 border border-white/5 bg-zinc-900/40 rounded-sm space-y-8 backdrop-blur-md">
-                        <div class="flex justify-between items-center">
-                            <span class="mono text-[10px] text-blue-500 font-black uppercase">Homeostatic_Robustness</span>
-                            <i data-lucide="activity" class="text-blue-500 w-5 h-5"></i>
-                        </div>
-                        
-                        <div class="space-y-2">
-                            <div class="flex justify-between mono text-[10px] uppercase font-bold">
-                                <span>Stability_Index</span>
-                                <span class="text-white">0.942_RC</span>
-                            </div>
-                            <div class="w-full bg-white/5 h-1">
-                                <div class="bg-blue-600 h-full w-[94%]"></div>
-                            </div>
+                <div class="lg:col-span-4 pt-12">
+                    <div class="bg-zinc-50 p-12 space-y-10">
+                        <div class="space-y-4">
+                            <span class="text-[10px] font-black uppercase tracking-widest opacity-30">Diagnostic Pedagogy</span>
+                            <h3 class="serif italic text-2xl">Forensic Norvoc AI</h3>
+                            
+                            <p class="text-xs text-zinc-500 leading-relaxed italic">
+                                Learning to read the stochastic drift of your own biological estate before it manifests as systemic depreciation.
+                            </p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="first-principles" class="py-40 bg-white">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="grid lg:grid-cols-3 gap-24">
                     
+                    <div class="knowledge-node space-y-8">
+                        <span class="text-4xl serif italic text-zinc-200">01</span>
+                        <h4 class="text-sm font-black uppercase tracking-widest">Systems Thermodynamics</h4>
+                        
+                        <p class="text-sm text-zinc-500 leading-relaxed">
+                            A master-class in **Mitochondrial Flux**. We teach the cell to maintain membrane potential ($\Delta \Psi_m$) through targeted Katin synthesis protocols.
+                        </p>
+                    </div>
+
+                    <div class="knowledge-node space-y-8">
+                        <span class="text-4xl serif italic text-zinc-200">02</span>
+                        <h4 class="text-sm font-black uppercase tracking-widest">Asset Defensibility</h4>
+                        
+                        <p class="text-sm text-zinc-500 leading-relaxed">
+                            The conversion of biological health into **Economic Durability**. We treat the Human Capital Estate as a portfolio requiring 99.9% uptime.
+                        </p>
+                    </div>
+
+                    <div class="knowledge-node space-y-8">
+                        <span class="text-4xl serif italic text-zinc-200">03</span>
+                        <h4 class="text-sm font-black uppercase tracking-widest">Sovereign Governance</h4>
+                        
+                        <p class="text-sm text-zinc-500 leading-relaxed">
+                            Establishing the **Helsinki Protocol**. We provide the statutory framework for data permanence and jurisdictional bio-sovereignty.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer-grid border-t border-white/5 pt-32 pb-16">
-        <div class="max-w-[1600px] mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-16 mb-32">
-                <div class="col-span-2 space-y-8">
-                    <div class="flex items-center gap-3">
-                        <div class="w-6 h-6 bg-white flex items-center justify-center rounded-sm">
-                            <i data-lucide="blocks" class="text-black w-4 h-4"></i>
-                        </div>
-                        <span class="h-text text-sm uppercase tracking-[0.2em]">Monument_Labs</span>
+    <footer class="bg-zinc-900 text-white py-32">
+        <div class="max-w-[1400px] mx-auto px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-24">
+                <div class="space-y-12 max-w-xl">
+                    <h2 class="serif italic text-6xl leading-none">The end of learning is the <span class="text-zinc-500">beginning of continuity.</span></h2>
+                    <p class="text-zinc-500 mono text-xs uppercase tracking-[0.4em]">Fiduciary // Engineering // Law</p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-24">
+                    <div class="space-y-6">
+                        <h5 class="text-[10px] font-black uppercase tracking-widest text-zinc-600">Nodes</h5>
+                        <ul class="text-xs space-y-4 serif italic">
+                            <li class="hover:text-zinc-400 cursor-pointer">Cambridge Intelligence Node</li>
+                            <li class="hover:text-zinc-400 cursor-pointer">Helsinki Data Node</li>
+                            <li class="hover:text-zinc-400 cursor-pointer">Singapore Synthesis Node</li>
+                        </ul>
                     </div>
-                    <p class="text-xs text-zinc-500 leading-relaxed max-w-xs mono uppercase">
-                        The world's first Large Biological Model (LBM) for the Human Capital Estate. Distributed bio-compute for a post-latency species.
-                    </p>
-                </div>
-
-                <div class="space-y-6">
-                    <h5 class="mono text-[10px] font-black uppercase text-blue-500 tracking-widest">Global_Nodes</h5>
-                    <ul class="space-y-4 mono text-[10px] text-zinc-400">
-                        <li class="hover:text-white cursor-pointer transition">HELSINKI_DATA_TRUST</li>
-                        <li class="hover:text-white cursor-pointer transition">SINGAPORE_SYNTHESIS</li>
-                        <li class="hover:text-white cursor-pointer transition">SILICON_VALLEY_KERNEL</li>
-                    </ul>
-                </div>
-
-                <div class="space-y-6">
-                    <h5 class="mono text-[10px] font-black uppercase text-blue-500 tracking-widest">Active_Protocols</h5>
-                    <ul class="space-y-4 mono text-[10px] text-zinc-400">
-                        <li class="hover:text-white cursor-pointer transition">NORVOC_CORE_LBM</li>
-                        <li class="hover:text-white cursor-pointer transition">KATIN_IMM_STABILITY</li>
-                        <li class="hover:text-white cursor-pointer transition">ESTATE_FIDUCIARY_ML-024</li>
-                    </ul>
-                </div>
-
-                <div class="space-y-6">
-                    <h5 class="mono text-[10px] font-black uppercase text-blue-500 tracking-widest">Sovereignty</h5>
-                    <ul class="space-y-4 mono text-[10px] text-zinc-400">
-                        <li class="hover:text-white cursor-pointer transition">GDPR_COMPLIANCE</li>
-                        <li class="hover:text-white cursor-pointer transition">GENOMIC_DATA_LAWS</li>
-                        <li class="hover:text-white cursor-pointer transition">ISO_9001_FOUNDRY</li>
-                    </ul>
+                    <div class="space-y-6">
+                        <h5 class="text-[10px] font-black uppercase tracking-widest text-zinc-600">Curriculum</h5>
+                        <ul class="text-xs space-y-4 serif italic">
+                            <li class="hover:text-zinc-400 cursor-pointer">Stochastic Error Detection</li>
+                            <li class="hover:text-zinc-400 cursor-pointer">IMM Stabilization</li>
+                            <li class="hover:text-zinc-400 cursor-pointer">The Helsinki Protocol</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-12 gap-8">
-                <div class="flex gap-12 mono text-[9px] uppercase font-black text-zinc-600">
-                    <span>&copy; MMXXVI MONUMENT_LABS_CONSORTIUM</span>
-                    <span class="hidden md:block">ENCRYPTION: AES-256-QUANTUM_HARDENED</span>
-                </div>
-                <div class="flex gap-8">
-                    <i data-lucide="twitter" class="w-4 h-4 text-zinc-500 hover:text-white transition"></i>
-                    <i data-lucide="linkedin" class="w-4 h-4 text-zinc-500 hover:text-white transition"></i>
-                    <i data-lucide="github" class="w-4 h-4 text-zinc-500 hover:text-white transition"></i>
-                </div>
+            
+            <div class="mt-40 pt-12 border-t border-zinc-800 flex justify-between items-center text-[9px] font-black uppercase tracking-[0.5em] text-zinc-600">
+                <span>&copy; MMXXVI Monument Labs Consortium</span>
+                <span class="italic">Scientia Potentia Est</span>
             </div>
         </div>
     </footer>
